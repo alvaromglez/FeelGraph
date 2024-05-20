@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FeelGraph</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="continuar_con_vibraciones">Continuar con vibraciones</string>
+    <string name="continuar_con_sonidos">Continuar con sonidos</string>
+    <string name="sonido">SONIDO</string>
+    <string name="vibracion">VIBRACIÓN</string>
+    <string name="comenzar_la_aplicaci_n">Comenzar la aplicación</string>
+    <string name="comenzar">COMENZAR</string>
+    <string name="bienvenido_a_app">BIENVENIDO</string>
+    <string name="seleccionar_grafico_para_procesar">Seleccionar grafico para procesar</string>
+    <string name="volver_a_seleccionar_vibraciones_o_sonidos">Volver a seleccionar vibraciones o sonidos</string>
+    <string name="grafico_a_procesar">Gráfico a procesar</string>
+    <string name="ajusta_intensidad_de_la_vibracion">AJUSTE INTENSIDAD DE LA VIBRACIÓN</string>
+    <string name="ajuste_de_sonido_con_botones_del_dispositivo">AJUSTE DE SONIDO CON BOTONES DEL DISPOSITIVO</string>
+    <string name="disminuir_intensidad_de_vibracion">Disminuir intensidad de vibración</string>
+    <string name="aumentar_intensidad_de_vibracion">Aumentar intensidad de vibración</string>
+    <string name="volver_a_la_pantalla_del_gr_fico">Volver a la pantalla del gráfico</string>
+    <string name="volver">VOLVER</string>
+    <string name="ir_a_pantalla_de_ajuste_de_vibraciones_o_sonidos">Ir a pantalla de ajuste de vibraciones o sonidos</string>
+    <string name="logo_de_bienvenida">Logo de bienvenida</string>
+    <string name="elige_c_mo_continuar">ELIGE CÓMO CONTINUAR</string>
+</resources>

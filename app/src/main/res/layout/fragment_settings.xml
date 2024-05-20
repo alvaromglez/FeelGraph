@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+
+    <TextView
+        android:id="@+id/titleSettings"
+        android:layout_width="361dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="@string/ajusta_intensidad_de_la_vibracion"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="#ffa500"
+        android:contentDescription="@string/aumentar_intensidad_de_vibracion"
+        android:foregroundTint="#4CAF50"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#000080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSettings" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/decreaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#ffa500"
+        android:contentDescription="@string/disminuir_intensidad_de_vibracion"
+        android:foregroundTint="#4CAF50"
+        android:src="@drawable/baseline_horizontal_rule_24"
+        android:tint="#000080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSettings" />
+
+    <TextView
+        android:id="@+id/intensityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSettings" />
+
+    <TextView
+        android:id="@+id/soundText"
+        android:layout_width="369dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="@string/ajuste_de_sonido_con_botones_del_dispositivo"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decreaseButton" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ffa500"
+        android:contentDescription="@string/volver_a_la_pantalla_del_gr_fico"
+        android:foregroundTint="#4CAF50"
+        android:text="@string/volver"
+        android:textColor="#000080"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

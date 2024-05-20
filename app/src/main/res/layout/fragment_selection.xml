@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionFragment" >
+
+
+    <TextView
+        android:id="@+id/selectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:gravity="center"
+        android:text="@string/elige_c_mo_continuar"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/vibrationButton"
+        android:layout_width="155dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#ffa500"
+        android:contentDescription="@string/continuar_con_vibraciones"
+        android:text="@string/vibracion"
+        android:textColor="#000080"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectionTitle" />
+
+    <Button
+        android:id="@+id/soundButton"
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#ffa500"
+        android:contentDescription="@string/continuar_con_sonidos"
+        android:text="@string/sonido"
+        android:textColor="#000080"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vibrationButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
