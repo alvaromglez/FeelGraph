@@ -107,7 +107,6 @@ class PrincipalFragment : Fragment() {
             InteractionState.SEARCHING_STARTPOINT -> {
                 if (event.action == MotionEvent.ACTION_DOWN && startPoint != null) {
                     val touchPoint = TouchUtils.transformTouchToBitmapCoordinates(event.x, event.y, view, binding.imageView)
-                    // Comprueba si el toque está cerca del punto de inicio
                     if (TouchUtils.isTouchNearStartPoint(touchPoint.x, touchPoint.y, startPoint!!, 25f)) {
                         currentState = InteractionState.INTERACTING_WITH_LINES
                         if(userPreference == "Vibration")

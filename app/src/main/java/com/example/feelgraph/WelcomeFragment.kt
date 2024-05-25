@@ -12,15 +12,12 @@ import com.example.feelgraph.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
 
-    //Propiedad para el binding
     private var _binding: FragmentWelcomeBinding? = null
-    //Esta propiedad solo es válida entre onCreateView y onDestroyView
     private val binding get() = _binding!!
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        // Inflate the layout for this fragment using View Binding
         _binding = FragmentWelcomeBinding.inflate(inflater, container, false)
         return binding.root
     }

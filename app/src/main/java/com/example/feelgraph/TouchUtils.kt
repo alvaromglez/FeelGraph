@@ -11,7 +11,6 @@ import kotlin.math.sqrt
 class TouchUtils {
     companion object{
         fun transformTouchToBitmapCoordinates(x: Float, y: Float, view: View, imageView: ImageView): PointF {
-            // Obtiene las dimensiones del ImageView y del Bitmap
             val imageViewWidth = view.width
             val imageViewHeight = view.height
             val bitmapWidth = imageView.drawable.intrinsicWidth
@@ -40,7 +39,6 @@ class TouchUtils {
             val dy = end.y - start.y
             val lengthSquared = dx * dx + dy * dy
 
-            // Asegurarte de que la longitud al cuadrado no sea cero para evitar división por cero
             if (lengthSquared == 0.0) {
                 // La línea es un punto; usa un cálculo de distancia punto a punto
                 val distanceToPoint = sqrt((start.x - touchPoint.x) * (start.x - touchPoint.x) + (start.y - touchPoint.y) * (start.y - touchPoint.y))
