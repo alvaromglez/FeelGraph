@@ -67,10 +67,12 @@ class PrincipalFragment : Fragment() {
                 this.startPoint = startPoint
                 this.processedLines = processedLines
                 binding.imageView.setImageBitmap(processedBitmap)
+                currentState = InteractionState.SEARCHING_STARTPOINT
             }
 
         }
     }
+
 
     private val pdfPickerLauncher =
         registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
